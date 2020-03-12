@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Screen Shot Saver</title>
+
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="input-group mb-3 urlbox my-0 mr-md-auto">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">URL: </span>
+            </div>
+            <input type="text" class="form-control" id="theurl" name="theurl"  placeholder="https://" aria-label="theurl" aria-describedby="basic-addon1">
+             <div class="input-group-append">
+              <button class="btn btn-outline-primary" id="btnViewDevices" type="button">View in Devcies</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-primary">Save Screen Shots</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 device-holder">
+        <label>1440x900</label>
+        <div id="device-holder-desktop" class="device desktop">
+          <iframe id="device-desktop" src="/square.html" frameborder="0"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-3 device-holder">
+        <label>768x1024</label>
+        <div class="device tablet">
+          <iframe id="device-tablet" src="/square.html" frameborder="0"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-3 device-holder">
+        <label>375x667</label>
+        <div class="device smartphone">
+          <iframe id="device-smartphone" src="/square.html" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- BOOTSTRAP 4 -->
+  <script src="/js/jquery-3.4.1.slim.min.js"></script>
+  <!-- bundle contains both bootstarp and popper -->
+  <script src="/js/bootstrap.bundle.min.js"></script>
+
+  <!-- my scripts -->
+  <script src="/js/html2canvas.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+</html>
